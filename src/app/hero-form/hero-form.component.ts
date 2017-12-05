@@ -16,7 +16,11 @@ export class HeroFormComponent implements OnInit {
 
   constructor() { }
 
-  onSubmi(){
+  newHero() {
+    this.model = new Hero(42, '', '');
+  }
+
+  onSubmit(){
     this.submitted = true;
   }
 
